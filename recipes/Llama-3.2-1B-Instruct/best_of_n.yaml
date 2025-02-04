@@ -1,0 +1,11 @@
+# refer to src/sal/config.py for more options
+
+approach: best_of_n
+n: 128
+search_batch_size: 1
+sort_completed: true
+filter_duplicates: true
+dataset_start: 0
+dataset_end: 500
+seed: 96
+prm_path: "Qwen/Qwen2.5-Math-PRM-7B"

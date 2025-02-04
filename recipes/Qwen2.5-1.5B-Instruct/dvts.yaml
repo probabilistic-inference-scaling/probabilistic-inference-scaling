@@ -1,0 +1,9 @@
+# refer to src/sal/config.py for more options
+
+model_path: Qwen/Qwen2.5-1.5B-Instruct
+custom_chat_template: null
+approach: dvts
+n: 128
+dataset_start: 0
+dataset_end: 500
+seed: 96

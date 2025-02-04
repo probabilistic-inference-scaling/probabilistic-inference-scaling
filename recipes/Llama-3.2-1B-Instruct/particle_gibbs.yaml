@@ -1,0 +1,8 @@
+# refer to src/sal/config.py for more options
+
+approach: particle_gibbs
+n: 4
+search_batch_size: 1
+dataset_start: 0
+dataset_end: 38
+seed: 96

@@ -1,0 +1,90 @@
+Metadata-Version: 2.2
+Name: search-and-learn
+Version: 0.1.0
+Summary: A tool for search-based methods on llms
+Home-page: https://github.com/reliable-agents/search-and-learn
+Author: The Hugging Face team (past and future)
+Author-email: lewis@huggingface.co
+License: Apache
+Keywords: nlp deep learning mcts
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: accelerate
+Requires-Dist: pebble
+Requires-Dist: latex2sympy2==1.9.1
+Requires-Dist: word2number
+Requires-Dist: transformers>=4.47.0
+Requires-Dist: fastapi
+Provides-Extra: quality
+Requires-Dist: ruff; extra == "quality"
+Requires-Dist: isort; extra == "quality"
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Provides-Extra: dev
+Requires-Dist: vllm==0.6.3; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Search and Learn
+
+> One thing that should be learned from [the bitter lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) is the great power of general purpose methods, of methods that continue to scale with increased computation even as the available computation becomes very great. The two methods that seem to scale arbitrarily in this way are _**search**_ and _**learning**_.
+
+# Installation
+
+```shell
+conda create -n sal python=3.10 && conda activate sal
+```
+```shell
+pip install -e '.[dev]'
+```
+
+
+## Replicating Scaling Test Time Compute results:
+The [recipes readme](recipes/README.md) includes launch commands and config files in order to replicate our results.
+
+
+## Citation
+If you use this codebase or the blogpost it would be great if you could cite us:
+```
+@misc{beeching2024scalingtesttimecompute,
+      title={Scaling test-time compute with open models},
+      author={Edward Beeching and Lewis Tunstall and Sasha Rush},
+      url={https://huggingface.co/spaces/HuggingFaceH4/blogpost-scaling-test-time-compute},
+}
+```
+Please also cite this work:
+```
+@misc{snell2024scalingllmtesttimecompute,
+      title={Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters}, 
+      author={Charlie Snell and Jaehoon Lee and Kelvin Xu and Aviral Kumar},
+      year={2024},
+      eprint={2408.03314},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2408.03314}, 
+}
+```
+

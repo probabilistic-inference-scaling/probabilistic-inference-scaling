@@ -1,0 +1,5 @@
+model_path: Qwen/Qwen2.5-Math-72B-Instruct
+custom_chat_template: null
+dataset_start: 0
+dataset_end: 500
+seed: 96

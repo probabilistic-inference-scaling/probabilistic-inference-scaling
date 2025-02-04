@@ -1,0 +1,10 @@
+# refer to src/sal/config.py for more options
+
+approach: dvts
+n: 128
+search_batch_size: 1
+dataset_start: 0
+dataset_end: 500
+seed: 96
+prm_path: "Qwen/Qwen2.5-Math-PRM-7B"
+model_path: "Qwen/Qwen2.5-Math-7B-Instruct"
