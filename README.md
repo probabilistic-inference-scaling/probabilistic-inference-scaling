@@ -2,3 +2,4 @@
 
 ## Isha Puri, Shivchander Sudalairaj, Guangxuan Xu, Kai Xu, Akash Srivastava
 
+![Process Function Diagram](images/process_fun_diagram.jpg)
